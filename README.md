@@ -76,6 +76,7 @@ python run.py
 
 ---
 ⚙️ Tech Stack
+
 Python 🐍
 
 Scikit-Learn
