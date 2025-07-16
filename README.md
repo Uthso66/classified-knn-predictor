@@ -20,7 +20,6 @@ classified-knn-predictor/
 │ └── knn_model.pkl # Saved KNN model
 ├── outputs/
 │ ├── confusion_matrix.png # Test confusion matrix plot
-│ ├── roc_curve.png # Test ROC curve plot
 │ ├── class_distribution.png # Class distribution of target
 │ └── classification_report.txt # Test classification report
 ├── src/
