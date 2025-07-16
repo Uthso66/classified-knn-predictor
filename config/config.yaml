@@ -1,0 +1,26 @@
+data:
+  raw_path: data/raw/Classified_Data
+  interim_dir: data/interim
+  processed_dir: data/processed
+  features_dir: data/features
+  test_size: 0.2
+  val_size: 0.2
+  random_state: 0
+
+model:
+  type: knn
+  hyperparameters:
+    n_neighbors: 5
+    metric: minkowski
+    p: 2  # Euclidean distance
+  save_path: models/knn_model.pkl
+
+evaluation:
+  metrics_output: models/model_metrics.json
+  confusion_matrix_plot: outputs/confusion_matrix.png
+  roc_curve_plot: outputs/roc_curve.png
+  classification_report_txt: outputs/classification_report.txt
+
+features:
+  numeric: ['WTT', 'PTI', 'EQW', 'SBI', 'LQE', 'QWG', 'FDJ', 'PJF', 'HQE', 'NXJ']
+  target: 'TARGET CLASS'
